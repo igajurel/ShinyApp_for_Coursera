@@ -5,5 +5,7 @@ The project is aimed at calculating the health risk score of a given user(patien
 
 The presentation for this project can be found at http://rpubs.com/igajurel/riskcore_calculation
 
+The application has been deployed at https://igajurel.shinyapps.io/HealthScore/
+
 The source code for this project can be found as ui.R and server.R at https://github.com/igajurel/ShinyApp_for_Coursera/tree/master/HealthScore
 
