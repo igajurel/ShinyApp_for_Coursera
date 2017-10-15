@@ -3,7 +3,7 @@
 This project is developed for the final project of Coursera course on Developing Data Products (https://www.coursera.org/learn/data-products/peer/tMYrn/course-project-shiny-application-and-reproducible-pitch) 
 The project is aimed at calculating the health risk score of a given user(patient) based on the criteria s/he satisfies for the health measure. The application identifies the category of risk s/he falls upon based on the score.
 
-The presentation for this project can be found at http://rpubs.com/igajurel/riskcore_calculation
+The presentation for this project can be found at http://rpubs.com/igajurel/healthscore_project_coursera
 
 The application has been deployed at https://igajurel.shinyapps.io/HealthScore/
 

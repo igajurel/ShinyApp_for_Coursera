@@ -8,8 +8,8 @@ Introduction
 ========================================================
 
 - This project is developed for the final project of Coursera course on Developing Data Products
-- The project is aimed at calculating the health risk score of a given user(patient) based on the criteria s/he satisfies for the health measure. 
-- The application identifies the category of risk s/he falls upon based on the score.
+- The project is aimed at calculating the health risk score and risk category of a given user(patient) based on the criteria s/he satisfies for the health measure. 
+- Github codes for the project can be found at https://github.com/igajurel/ShinyApp_for_Coursera
 
 Measure Definition:
 This measure identifies if any patient who is between 30-50 years of age and enrolled in any health plan during the current year (Jan 1 - Dec 31), is either diagnosed with blood pressure or is prescribed with a medication and who follows up with the doctor within 30 days of the diagnosis or prescription date.
@@ -38,12 +38,28 @@ Server Calculation Details
 - Score 0  = Outlier/Not-Considered ; Score 1  = No-Risk ; Score 2  = High-Risk ; Score 3  = Medium-Risk ; Score 4  = Low-Risk
 
 
-Application Components
+Application - Backend Calculation
 ========================================================
-- age: (numericInput) - any numeric input value
-- enrolled: (checkboxInput) - flag input value of enrollment
-- diagnosed: (checkboxInput) - flag input value of diagnosis
-- prescribed: (checkboxInput) - flag input value of prescription
-- followup: (checkboxInput) - flag input value of follow-up
-- patient_score: (verbatimTextOutput) - text output of patient numeric score between 0-4
-- patient_risk_category: (verbatimTextOutput) - text output of patient health risk category (Outlier/Not-Considered ; No-Risk ; High-Risk ; Medium-Risk ; Low-Risk)
+
+Assuming the user inputs age of 35, is enrolled in current year, diagnosed with blood pressure, not medicated, but has followed-up, the application backend computes the score as 3 and the risk category as Medium Risk' -
+
+
+
+
+```r
+#Based on the input, the patients score is '
+patient_score
+```
+
+```
+[1] 3
+```
+
+```r
+#And Patient is identified as '
+patient_risk_category
+```
+
+```
+[1] "Medium-Risk"
+```
